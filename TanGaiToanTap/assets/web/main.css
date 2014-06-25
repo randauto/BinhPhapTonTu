@@ -1,0 +1,28 @@
+﻿body{
+	 
+}
+
+pre{
+	white-space: pre-line;
+	
+}
+
+body, pre{
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: roboto, tomaho;
+	font-size:20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	word-spacing:5px;
+}
+
+.titlebook{
+	text-align: center;
+	text-transform:uppercase;
+	color:#F8008B;
+}
+
+img{
+	width: 100%;
+}

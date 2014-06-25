@@ -1,4 +1,11 @@
-package com.vinilearning.tangai;
+package com.vinilearning.tangai.activity;
+
+import com.vinilearning.tangai.R;
+import com.vinilearning.tangai.R.id;
+import com.vinilearning.tangai.R.layout;
+import com.vinilearning.tangai.R.menu;
+import com.vinilearning.tangai.R.string;
+import com.vinilearning.tangai.activity.NavigationDrawerFragment.NavigationDrawerCallbacks;
 
 import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
