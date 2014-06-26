@@ -34,14 +34,14 @@
                 android:layout_height="110dp"
                 android:layout_alignParentLeft="true"
                 android:singleLine="false"
-                android:text="Danh sách" />
+                android:text="Tán gái thời nay" />
 
             <Button
                 android:id="@+id/btnTongHop"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_alignParentRight="true"
-                android:text="Tổng hợp" />
+                android:text="Tán gái thời xưa" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -58,14 +58,6 @@
                 android:layout_alignParentLeft="true"
                 android:singleLine="false"
                 android:text="Giới thiệu" />
-
-            <Button
-                android:id="@+id/btnFavorites"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_alignParentRight="true"
-                android:singleLine="false"
-                android:text="Ưa thích" />
         </RelativeLayout>
     </LinearLayout>
 

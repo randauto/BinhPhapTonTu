@@ -1,8 +1,5 @@
 package com.vinilearning.tangai.activity;
 
-import org.codechimp.apprater.AppRater;
-import org.codechimp.apprater.GoogleMarket;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -20,7 +17,7 @@ import com.vinilearning.tangai.utils.T;
  * 
  */
 public class DashBoardActivity extends BaseActivity implements OnClickListener {
-	private Button btnList, btnTonghop, btnGioiThieu, btnFavorites;
+	private Button btnList, btnTonghop, btnGioiThieu;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -40,8 +37,6 @@ public class DashBoardActivity extends BaseActivity implements OnClickListener {
 		btnGioiThieu = (Button) findViewById(R.id.btnGioiThieu);
 		btnGioiThieu.setOnClickListener(this);
 
-		btnFavorites = (Button) findViewById(R.id.btnFavorites);
-		btnFavorites.setOnClickListener(this);
 	}
 
 	@Override
@@ -56,14 +51,6 @@ public class DashBoardActivity extends BaseActivity implements OnClickListener {
 
 			break;
 		case R.id.btnGioiThieu:
-			AppRater.setNumDaysForRemindLater(3);
-			AppRater.setMarket(new GoogleMarket());
-			AppRater.app_launched(this);
-			AppRater.showRateDialog(DashBoardActivity.this);
-			break;
-
-		case R.id.btnFavorites:
-
 			break;
 
 		default:
