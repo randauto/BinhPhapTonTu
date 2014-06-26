@@ -3,7 +3,6 @@ package com.vinilearning.tangai.common;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.Menu;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -25,12 +24,6 @@ public class BaseActivity extends Activity {
 				adView.loadAd(adRequest);
 			}
 		}, 1000);
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
 	}
 
 }

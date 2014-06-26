@@ -8,8 +8,10 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">About Us</string>
     <string name="image_des">this is a image</string>
     <string name="press_again_exit">Press Back againt to exit!</string>
+    <string name="version">"Version "</string>
+    <string name="all_rights_reserved"> all rights reserved.</string>
 
 </resources>
