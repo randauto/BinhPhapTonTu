@@ -119,7 +119,6 @@ public class NavigationDrawerFragment extends Fragment {
 				});
 
 		String[] left = getResources().getStringArray(R.array.title);
-		String[] right = getResources().getStringArray(R.array.file_content);
 
 		// set adapter for drawer.
 		mDrawerListView.setAdapter(new ArrayAdapter<String>(getActionBar()
@@ -127,6 +126,7 @@ public class NavigationDrawerFragment extends Fragment {
 				android.R.id.text1, left));
 		mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
 
+		// set version app.
 		tvVersion = (TextView) view.findViewById(R.id.tvVersion);
 		PackageInfo info = null;
 		try {

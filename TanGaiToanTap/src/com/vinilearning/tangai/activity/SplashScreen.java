@@ -7,8 +7,6 @@ import android.os.Handler;
 import android.view.Window;
 
 import com.vinilearning.tangai.R;
-import com.vinilearning.tangai.asynctask.LoadDataAsyncTask;
-import com.vinilearning.tangai.database.DatabaseFactory;
 
 public class SplashScreen extends Activity {
 	@Override
@@ -16,11 +14,6 @@ public class SplashScreen extends Activity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.splashscreen);
-
-		if (DatabaseFactory.danhsach == null) {
-			new LoadDataAsyncTask(SplashScreen.this).execute();
-			return;
-		}
 
 		new Handler().postDelayed(new Runnable() {
 
@@ -35,7 +28,7 @@ public class SplashScreen extends Activity {
 	 * Goto dashboard screen.
 	 */
 	private void nextMain() {
-		Intent intent = new Intent(SplashScreen.this, DashBoardActivity.class);
+		Intent intent = new Intent(SplashScreen.this, MainActivity.class);
 		startActivity(intent);
 		finish();
 	}
